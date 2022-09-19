@@ -1,0 +1,189 @@
+/*You Tube Header*/
+.header{
+    height:55px;
+    justify-content: space-between;
+    display:flex;
+    flex-direction: row;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    background-color: white;
+    border-bottom:1px solid rgb(228,228,228);
+    z-index: 1;
+    cursor:pointer;
+}
+/* Left section of header ham menu and Youtube-logo*/
+.left-section{
+    display:flex;
+    align-items:center;
+    width: 200px;
+}
+.ham-menu{
+    margin-left:25px;
+    margin-right:25px;
+    height:25px;
+}
+.youtube-logo-main{
+    position:relative;
+}
+.youtube-logo{
+    height:20px;
+}
+.youtube-trademark{
+    position:absolute;
+    top:-8px;
+    right:-14px;
+    font-family:"Roboto","Arial",san-serif;
+    color:rgb(125, 125, 125);
+    font-size: 10px;
+    font-weight:100;
+}
+
+/*middle section of header consists of search icon and voice search*/
+.middle-section{
+    display:flex;
+    align-items:center;
+    margin-left:60px;
+    margin-right:35px;
+    flex:1;
+    max-width:650px;
+}
+.search-bar{
+    flex:1;
+    height:34px;
+    font-size:16px;
+    border-width: 0.5px;
+    border:solid rgb(227, 227, 227);
+    border-radius:2px;
+    background-color: rgb(255, 255, 255);
+    width:0;
+}
+.search-bar::placeholder{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    font-size:16px;
+    padding-left:5px;
+    color:rgb(170, 170, 170);
+}
+.search-button{
+    height:40px;
+    width:66px;
+    object-position: center;
+    border-left:none;
+    border-top:solid rgba(0, 0, 0,0.05); 
+    border-right:solid rgba(0, 0, 0,0.05);
+    border-bottom:solid rgba(0, 0, 0,0.05); 
+    background-color: rgb(248, 248, 248);
+    margin-left:0px;
+    margin-right:10px;
+}
+
+.search-icon{
+    height:25px;
+    vertical-align: middle;
+}
+.voice-button{
+    border:none;
+    background-color:rgb(248, 248, 248);
+    border-radius:20px;
+    height:40px;
+    width:40px;
+}
+.voice-icon{
+    height:24px;
+    vertical-align:middle;
+}
+
+/*header right section includes upload, notifications and account*/
+.right-section{
+    flex-shrink:0;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    width:160px;
+    margin-right:15px;
+}
+.upload-button{
+    height:40px;
+    width:40px;
+    background-color: transparent;
+    border:none;
+}
+.upload-icon{
+    height:26px;
+    vertical-align: middle;
+}
+.noti-button{
+    position:relative;
+    height:40px;
+    width:40px;
+    background-color: transparent;
+    border:none;
+}
+.noti-icon{
+    height:28px;
+    vertical-align: middle;
+    opacity:0.6;
+}
+.noti-num{
+    position:absolute;
+    top:6px;
+    right:0;
+    background-color: rgb(209, 2, 2);
+    font-family:"Roboto","Arial",san-serif;
+    color:white;
+    padding:1px 4px;
+    border-radius:8px;
+    font-size:12px;
+}
+.account-icon{
+    height:32px;
+    width:max-content;
+    vertical-align:middle;
+    border-radius:50%;
+}
+.account-button{
+    padding:0;
+    border-radius:50%;
+    border:none;
+}
+
+/*header hover settings*/
+.search-button:hover,.voice-button:hover{
+    background-color: rgb(208, 208, 208);
+    border:none;
+}
+.youtube-logo-main,.search-button,.voice-button,.upload-button,.noti-button{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.youtube-logo-main .tooltip,
+.search-button .tooltip,
+.voice-button .tooltip,
+.upload-button .tooltip,
+.noti-button .tooltip{
+    position:absolute;
+    background-color:rgb(92, 92, 92);
+    color:white;
+    padding:8px 8px;
+    border-radius:3px;
+    font-size:12px;
+    font-family:"Roboto","Arial";
+    font-weight:200;
+    bottom:-50px;
+    opacity:0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap ;
+}
+.youtube-logo-main:hover .tooltip,
+.search-button:hover .tooltip,
+.voice-button:hover .tooltip,
+.upload-button:hover .tooltip,
+.noti-button:hover .tooltip{
+    opacity:1;
+}

@@ -1,0 +1,21 @@
+head{
+    cursor:pointer;
+}
+body{
+    font-family:"Roboto","Arial",san-serif;
+}
+p{
+    margin-top:0;
+    margin-bottom:0;
+    margin-left:10px;
+    font-family:"Roboto","Arial",san-serif;
+    line-height:20px;
+    font-size:18px;
+}
+body{
+    margin:0;
+    cursor:pointer;
+    padding-top:60px;
+    padding-left:72px;
+    background-color:rgb(249, 249, 249);
+}

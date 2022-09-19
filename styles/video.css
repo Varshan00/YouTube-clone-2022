@@ -1,0 +1,233 @@
+/* advertisement for YouTube Premium*/
+.ad{
+    padding-left:24px;
+    padding-top:30px;
+    padding-bottom:10px;
+    display:block;
+    flex-direction:row;
+    position:relative;
+    background-color:white;
+}
+.close{
+    position:absolute;
+    top:10px;
+    right:8px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:bold;
+    height:40px;
+    width:40px;
+    text-align: center;
+    background-color:grey;
+    border-radius:75%;
+    color:white;
+}
+.prem{
+    height:24px;
+    max-width:320px;
+    margin-bottom:10px;
+}
+.cont{
+    font-size:36px;
+    font-weight:700;
+    max-width:440px;
+    max-height:180px;
+    text-align: left;
+    line-height:52px;
+    margin-bottom: 12px;
+    white-space:unset;
+}
+.trial{
+    padding:8px 14px;
+    border:solid 1px black;
+    background-color:transparent;
+    font-size:14px;
+    font-weight:700;
+    border-radius:18px;
+}
+/*ad-hover*/
+.close:hover{
+    opacity:0.5;
+}
+.trial:hover{
+    background-color:rgb(205, 205, 205);
+}
+
+/* YouTube videos grid*/
+.YouTube{
+    background-color:rgb(249, 249, 249);
+    display:grid;
+    padding-top:20px;
+    padding-left:24px;
+    padding-right:24px;
+    grid-template-columns:1fr 1fr 1fr;
+    column-gap:16px;
+    row-gap:32px;
+}
+
+@media (max-width:800px){
+    .YouTube{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media(min-width:799px) and (max-width:1149px){
+    .YouTube{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media(min-width:1150px){
+    .YouTube{
+        grid-template-columns:1fr 1fr 1fr 1fr;
+    }
+}
+/* Thumbnails adjustment*/
+.videos{
+    padding-left:4px;
+    padding-right:4px;
+    position:relative;
+    width:100%;
+    margin-bottom:10px;
+}
+.video-time{
+    font-family:"Roboto","Arial",san-serif;
+    font-size:12px;
+    font-weight:500;
+    padding:2px 3px;
+    bottom:8px;
+    right:4px;
+    position:absolute;
+    background-color: black;
+    color:white;
+    border-radius:2px;
+}
+
+.thumbnail-row{
+    position:relative;
+}
+.thumbnail{
+    width:100%;
+}
+.video-title-link{
+    text-decoration: none;
+    color:black;
+}
+.subscriber-link{
+    text-decoration:none;
+    color:rgb(94,94,94);
+}
+
+
+/*you tube channels logo and hover & active settings */
+.videos:active{
+    background-color:rgb(219,219,219);
+}
+.logo-hover{
+    position:relative;
+    display:flex;
+    flex-direction:row;
+}
+.logo-hover .hover-tip{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;;
+    position:absolute;
+    left:0;
+    bottom:-32px;
+    font-family:"Roboto","Arial",san-serif;
+    font-size:11px;
+    background-color:rgb(92, 92, 92);
+    color:white;
+    padding:4px 5px;
+    opacity:0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap ;
+}
+.logo-hover:hover .hover-tip{
+    z-index:3;
+    opacity:1;
+}
+
+.profile-pic{
+    width:36px;
+    border-radius:50%;
+}
+/*context code*/
+.videos:hover .options{
+    opacity: 2;
+    pointer-events: none;
+    white-space: nowrap ;
+}
+.video-info-grid{
+    display:grid;
+    grid-template-columns:36px 1fr 1fr;
+    margin-top:8px;
+    padding-bottom:24px;
+}
+.video-title{
+    display:block;
+    -webkit-line-clamp: 2;
+    display:box;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    font-size:14px;
+    font-weight:500;
+    margin-bottom:12px;
+    max-height:48px;
+    width:250px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:normal;
+}
+.channel,.stats{
+    font-size:12px;
+    color:rgb(94,94,94);
+    line-height:18px;
+}
+.opt{
+    width:100%;
+}
+.video-option .options{
+    position:absolute;
+    display:flex;
+    flex-direction:row;
+    height:26px; width:26px; 
+    align-items: center;
+    border:none;
+    border-radius:13px;
+    background-color:transparent;
+    opacity: 0;
+    transition: opacity 0.15s;
+}
+.video-option:hover .options{
+    opacity:1;
+    pointer-events: none;
+    white-space: nowrap ;
+}
+.video-option:active .options{
+    background-color: rgb(185, 185, 185);
+    pointer-events: none;
+    white-space: nowrap ;
+}
+/* span */
+.tick{
+    color:white;
+    background-color:rgb(94,94,94);
+    font-size:8px;
+    padding:1px 3px;
+    border-radius:7px;
+}
+.dot{
+    font-size:13px;
+    font-weight:bolder;
+    color:rgb(53, 53, 53);
+}
+
+
+
+
+

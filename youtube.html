@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            YouTube.com Clone
+        </title>
+        
+        <link rel="stylesheet" href="styles/general.css">
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/video.css">
+        <link rel="stylesheet" href="styles/sidebar.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    
+    </head>
+    <body>
+        <header class="header">
+            <nav class="left-section">
+                <img class="ham-menu" src="icons/hamburger-menu.svg">
+                <div class="youtube-logo-main">
+                    <img class="youtube-logo"src="icons/youtube-logo.svg">
+                    <div class="youtube-trademark">
+                        IN
+                    </div>
+                    <div class="tooltip">YouTube Home</div>
+                </div>
+            </nav>
+            <nav class="middle-section">
+                <input class="search-bar" type="text"placeholder="Search">
+                <button class="search-button">
+                    <img class="search-icon" src="icons/search.svg">
+                    <div class="tooltip">Search</div>
+                </button>
+                <button class="voice-button">
+                    <img class="voice-icon"src="icons/voice-search-icon.svg">
+                    <div class="tooltip">Search with your voice</div>
+                </button>
+            </nav>
+            <nav class="right-section">
+                <button class="upload-button">
+                    <img class="upload-icon"src="icons/upload.svg">
+                    <div class="tooltip">Create</div>
+                </button>
+                <button class="noti-button">
+                    <img class="noti-icon"src="icons/notifications.svg">
+                    <div class="noti-num">
+                        9+
+                    </div>
+                    <div class="tooltip">Notifications</div>
+                </button>
+                <button class="account-button">
+                    <img class="account-icon" src="icons/sree-icon.jpeg">
+                </button>
+            </nav>
+        </header>
+
+        <nav class="sidebar">
+            <div class="sidebar-link">
+                <img src="icons/home.svg">
+                <div>Home</div>
+                <div class="tip">Home</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="icons/explore.svg">
+                <div>Explore</div>
+                <div class="tip">Explore</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="icons/shorts.svg">
+                <div>Shorts</div>
+                <div class="tip">Shorts</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="icons/subscriptions.svg">
+                <div>Subscriptions</div>
+                <div class="tip">Subscriptions</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="icons/library.svg">
+                <div>Library</div>
+                <div class="tip">Library</div>
+            </div>
+        </nav>
+        
+        <header class="ad">
+            <div class="premium">
+                <img class="prem" src="thumbnails/YouTube-Premium.svg">
+                <div class="close">&times;</div>
+            </div>
+            <div class="cont">
+                Introducing 1 month & 3 months Prepaid Plans
+                <div>
+                    <button class="trial">Get it now</button>
+                </div>
+            </div>
+        </header>
+
+        <main class="YouTube">
+            <div class="videos">
+                <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=RoUXQeg0hBo" target="_self" class="video-title-link">
+                        <img class="thumbnail"src="thumbnails/vegetavsbroly.jpg">
+                        <div class="video-time">
+                            8:14
+                        </div>
+                    </a>
+                </div>
+                <div class="video-info-grid">
+                    <div class="logo">
+                        <a href="https://www.youtube.com/channel/UCTHFPQRsq_M37pUGraquVtg" target="_self" class="subscriber-link">
+                            <div class="logo-hover">
+                                <img class="profile-pic"src="logos/goku.jpg">
+                                <div class="hover-tip">Treyvon The true super saiyan rosé</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="context">
+                        <p class="video-title">
+                            <a href="https://www.youtube.com/watch?v=RoUXQeg0hBo" target="_self" class="video-title-link">                                    
+                                Dragon Ball Super Broly Vegeta VS Broly Full Fight English dub 
+                            </a> 
+                        </p>
+
+                        <p class="channel">
+                            <a href="https://www.youtube.com/channel/UCTHFPQRsq_M37pUGraquVtg" target="_self" class="subscriber-link">
+                                Treyvon The true super saiyan rosé
+                            </a>
+                        </p>
+
+                        <p class="stats">
+                            221K views <span class="dot">&#183;</span>  11 months ago
+                        </p>  
+                    </div>
+
+                    <div class="video-option">
+                        <button class="options">
+                            <img class="opt" src="icons/options.svg">
+                        </button>
+                    </div>
+                </div>
+            </div>
+                
+            <div class="videos">
+                <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=B66feInucFY" target="_self" class="video-title-link">
+                        <img class="thumbnail"src="thumbnails/daredevil.jpg">
+                        <div class="video-time">
+                            3:01
+                        </div>                            
+                    </a>
+                </div>
+
+                <div class="video-info-grid">
+                    <div class="logo">
+                        <a href="https://www.youtube.com/c/Netflix" target="_self" class="subscriber-link">
+                            <div class="logo-hover">
+                                <img class="profile-pic"src="logos/Netflix-logo.jpg"> 
+                                <div class="hover-tip">Netflix</div>                         
+                            </div>
+                        </a>
+                     </div>
+                            
+                    <div class="context">
+                        <p class="video-title">
+                            <a href="https://www.youtube.com/watch?v=B66feInucFY" target="_self" class="video-title-link">
+                                Marvel's Daredevil | Hallway Fight Scene [HD] | Netflix
+                            </a>
+                        </p>
+
+                        <p class="channel">
+                            <a href="https://www.youtube.com/c/Netflix" target="_self" class="subscriber-link">
+                               Netflix <span class="tick">&#10003;</span>
+                            </a>
+                        </p>
+
+                        <p class="stats">
+                            4.9M views <span class="dot">&#183;</span>  3 year ago
+                        </p>
+                    </div>
+
+                    <div class="video-option">
+                        <button class="options">
+                            <img class="opt" src="icons/options.svg">
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="videos">
+                <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=zPljqA8CjXU" target="_self" class="video-title-link">
+                        <img class="thumbnail"src="thumbnails\illaiyaraja.jpg">
+                        <div class="video-time">
+                            1:21:02
+                        </div>
+                    </a>
+                </div> 
+                <div class="video-info-grid">                            
+                    <div class="logo">
+                        <a href="https://www.youtube.com/c/ilaiyaraajaofficial" target="_self" class="subscriber-link">
+                            <div class="logo-hover">
+                                <img class="profile-pic"src="logos/ilaiyaraja.jpg""> 
+                                <div class="hover-tip">Ilaiyaraaja Official &#9834;</div>                         
+                            </div>
+                        </a>                           
+                    </div>
+
+                    <div class="context">
+                        <p class="video-title">
+                            <a href="https://www.youtube.com/watch?v=zPljqA8CjXU" target="_self" class="video-title-link">
+                                Isaignani Ilaiyaraaja - Director Hits | Tamil Songs | 80s & 90s Evergreen Hits
+                            </a>
+                        </p>
+
+                        <p class="channel">
+                            <a href="https://www.youtube.com/c/ilaiyaraajaofficial" target="_self" class="subscriber-link">
+                                Ilaiyaraaja Official &#9834;
+                            </a>
+                        </p>
+
+                        <p class="stats">
+                            93K views <span class="dot">&#183;</span> 4 weeks ago
+                        </p>
+                    </div>
+
+                    <div class="video-option">
+                        <button class="options">
+                            <img class="opt" src="icons/options.svg">
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="videos">
+                <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=FslYNJ2Uh8c" target="_self" class="video-title-link">
+                       <img class="thumbnail"src="thumbnails/gohan.jpg">
+                        <div class="video-time">
+                            10:03                            
+                        </div>
+                    </a>
+                </div>
+
+                <div class="video-info-grid">
+                    <div class="logo">
+                        <a href="https://www.youtube.com/channel/UC59ijm6n6c497ulwxjIK1nQ" target="_self" class="subscriber-link">
+                            <div class="logo-hover">
+                                <img class="profile-pic"src="logos/ssj goku-logo.jpg"> 
+                                <div class="hover-tip">Blue Kaioken</div>                         
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="context">
+                        <p class="video-title">
+                            <a href="https://www.youtube.com/watch?v=FslYNJ2Uh8c" target="_self" class="video-title-link">
+                                Super Saiyan 2 Gohan vs Cell Full Fight English Dub
+                            </a>
+                        </p>
+
+                        <p class="channel">
+                            <a href="https://www.youtube.com/channel/UC59ijm6n6c497ulwxjIK1nQ" target="_self" class="subscriber-link">
+                                Blue Kaioken
+                            </a>
+                        </p>
+
+                        <p class="stats">
+                            110K views <span class="dot">&#183;</span> 2 months ago
+                        </p>
+                    </div>
+
+                    <div class="video-option">
+                        <button class="options">
+                            <img class="opt" src="icons/options.svg">
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="videos">
+                <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=TK_7GUKY3ic" target="_self" class="video-title-link">
+                        <img class="thumbnail"src="thumbnails/brock-undertaker.jpg">
+                        <div class="video-time">
+                            1:34
+                        </div>
+                    </a>
+                </div>
+
+                <div class="video-info-grid">
+                    <div class="logo">
+                        <a href="https://www.youtube.com/c/WWE" target="_self" class="subscriber-link">
+                            <div class="logo-hover">
+                                <img class="profile-pic"src="logos/WWE-logo.jpg"> 
+                                <div class="hover-tip">WWE</div>                         
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="context">
+                        <p class="video-title">
+                            <a href="https://www.youtube.com/watch?v=TK_7GUKY3ic" target="_self" class="video-title-link">
+                                The Undertaker vs. Brock Lesnar - WrestleMania 30 — The End of The Streak, only on WWE Network
+                            </a>
+                        </p>
+
+                        <p class="channel">
+                            <a href="https://www.youtube.com/c/WWE" target="_self" class="subscriber-link">
+                                WWE <span class="tick">&#10003;</span>
+                            </a>
+                        </p>
+
+                        <p class="stats">
+                            6.2M views <span class="dot">&#183;</span>  7 years ago                                
+                        </p>
+                    </div>
+
+                    <div class="video-option">
+                        <button class="options">
+                            <img class="opt" src="icons/options.svg">
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="videos">
+                <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=E1NyoN6c1vs" target="_self" class="video-title-link">
+                        <img class="thumbnail"src="thumbnails/tanjiro.jpg">
+                        <div class="video-time">
+                            11:41
+                        </div>
+                    </a>
+                </div>
+
+                <div class="video-info-grid">
+                    <div class="logo">
+                        <a href="https://www.youtube.com/channel/UCNHZDVAkCD9idNZNETHl4cw" target="_self" class="subscriber-link">
+                            <div class="logo-hover">
+                            <img class="profile-pic"src="logos/zenitsu-logo.jpg"> 
+                                <div class="hover-tip">Demon tracker</div>                         
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="context">
+                        <p class="video-title">
+                            <a href="https://www.youtube.com/watch?v=E1NyoN6c1vs" target="_self" class="video-title-link">
+                                Tanjiro summoned the god of fire, Rui's head ''Disappeared'' - Demon Slayer EngSub
+                            </a>
+                        </p>
+
+                        <p class="channel">
+                            <a href="https://www.youtube.com/channel/UCNHZDVAkCD9idNZNETHl4cw" target="_self" class="subscriber-link">
+                                Demon tracker
+                            </a>
+                        </p>
+
+                        <p class="stats">
+                            33K views <span class="dot">&#183;</span> 1 year ago
+                        </p>
+                    </div>
+
+                    <div class="video-option">
+                        <button class="options">
+                            <img class="opt" src="icons/options.svg">
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="videos">
+                <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=wMmy2MlH55U" target="_self" class="video-title-link">
+                        <img class="thumbnail"src="thumbnails/athleix.thumbnail.jpg">
+                        <div class="video-time">
+                            12:50
+                        </div>
+                    </a>
+                </div>
+
+                <div class="video-info-grid">
+                    <div class="logo">
+                        <a href="https://www.youtube.com/c/athleanx" target="_self" class="video-title-link">
+                            <div class="logo-hover">
+                                <img class="profile-pic"src="logos/athlenx.jpg"> 
+                                <div class="hover-tip">Athlean-X</div>                         
+                            </div>
+                        </a>                        
+                    </div>
+
+                    <div class="context">
+                        <p class="video-title">
+                            <a href="https://www.youtube.com/watch?v=wMmy2MlH55U" target="_self" class="video-title-link">
+                                The LOWER Chest Solution (GET DEFINED PECS!)
+                            </a>
+                        </p>
+
+                        <p class="channel">
+                            <a href="https://www.youtube.com/c/athleanx" target="_self" class="subscriber-link">
+                                Athlean-X <span class="tick">&#10003;</span>
+                            </a>
+                        </p>
+
+                        <p class="stats">
+                            23M views <span class="dot">&#183;</span>  4 years ago
+                        </p>
+                    </div>
+
+                    <div class="video-option">
+                        <button class="options">
+                            <img class="opt" src="icons/options.svg">
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="videos">
+                <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=CvjoXdC-WkM" target="_self" class="video-title-link">
+                        <img class="thumbnail"src="thumbnails\joeyandchandler.jpg">
+                        <div class="video-time">
+                            11:09
+                        </div>
+                    </a>
+                </div>
+
+                <div class="video-info-grid">
+                    <div class="logo">
+                        <a href="https://www.youtube.com/c/hbomax" target="_self" class="subscriber-link">
+                            <div class="logo-hover">
+                                <img class="profile-pic"src="logos/hbo-max.jpg"> 
+                                <div class="hover-tip">HBO Max</div>                         
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="context">
+                        <p class="video-title">
+                            <a href="https://www.youtube.com/watch?v=CvjoXdC-WkM" target="_self" class="video-title-link">
+                                The Best Of Chandler Bing & Joey Tribbiani | Friends | HBO Max
+                            </a>
+                        </p>
+
+                        <p class="channel">
+                            <a href="https://www.youtube.com/c/hbomax" target="_self" class="subscriber-link">
+                                HBO Max <span class="tick">&#10003;</span>
+                            </a>
+                        </p>
+
+                        <p class="stats">
+                            2.1M views <span class="dot">&#183;</span> 1 year ago
+                        </p>
+                    </div>
+
+                    <div class="video-option">
+                        <button class="options">
+                            <img class="opt" src="icons/options.svg">
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="videos">
+                <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=EKrgwYf598U" target="_self" class="video-title-link">
+                        <img class="thumbnail"src="thumbnails\plip-plip.jpg">
+                        <div class="video-time">
+                            8:18
+                        </div>
+                    </a>
+                </div>
+
+                <div class="video-info-grid">
+                    <div class="logo">
+                        <a href="https://www.youtube.com/c/PlipPlip" target="_self" class="subscriber-link">
+                            <div class="logo-hover">
+                                <img class="profile-pic"src="logos/plipl-plip-template.jpg"> 
+                                <div class="hover-tip">Plip Plip</div>
+                            </div>                         
+                        </a>
+                    </div>
+
+                    <div class="context">
+                        <p class="video-title">
+                            <a href="https://www.youtube.com/watch?v=EKrgwYf598U" target="_self" class="video-title-link">
+                                How to make a perfect budget for Singles? - Panic Padmanaban | Plip Plip
+                            </a>
+                        </p>
+
+                        <p class="channel">
+                            <a href="https://www.youtube.com/c/PlipPlip" target="_self" class="subscriber-link">
+                                Plip Plip <span class="tick">&#10003;</span>
+                            </a>
+                        </p>
+
+                        <p class="stats">
+                            1.7M views <span class="dot">&#183;</span> 2 year ago
+                        </p>
+                    </div>
+
+                    <div class="video-option">
+                        <button class="options">
+                            <img class="opt" src="icons/options.svg">
+                        </button>
+                    </div>
+                </div>
+            </div>
+                    
+            <div class="videos">
+                <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=OsLCY3vz3t8" target="_self" class="video-title-link">
+                        <img class="thumbnail"src="thumbnails\vikram.png">
+                        <div class="video-time">
+                            3:37
+                        </div>
+                    </a>
+                </div>
+
+                <div class="video-info-grid">
+                    <div class="logo">
+                        <a href="https://www.youtube.com/c/SonyMusicSouth" target="_self" class="subscriber-link">
+                            <div class="logo-hover">
+                                <img class="profile-pic"src="logos/sonysouth.jpg"> 
+                                <div class="hover-tip">Sony Music</div>
+                             </div>
+                        </a>
+                    </div>
+    
+                    <div class="context">
+                        <p class="video-title">
+                            <a href="https://www.youtube.com/watch?v=OsLCY3vz3t8" target="_self" class="video-title-link">
+                                VIKRAM Title Track Lyric | Kamal Haasan | Vijay Sethupathi | Lokesh Kanagaraj | Anirudh
+                            </a>
+                        </p>
+                        
+                        <p class="channel">
+                            <a href="https://www.youtube.com/c/SonyMusicSouth" target="_self" class="subscriber-link">
+                                Sony Music <span class="tick">&#10003;</span>
+                            </a>
+                        </p>
+                            
+                        <p class="stats">
+                            41M views <span class="dot">&#183;</span> 3 months ago
+                        </p>
+                    </div>
+
+                    <div class="video-option">
+                        <button class="options">
+                            <img class="opt" src="icons/options.svg">
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="videos">
+                <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=_kciYqmz52g" target="_self" class="video-title-link">
+                        <img class="thumbnail"src="thumbnails\paridhabangal.jpg">
+                        <div class="video-time">
+                            14:48
+                        </div>
+                    </a>
+                </div>
+
+                <div class="video-info-grid">
+                    <div class="logo">
+                        <a href="https://www.youtube.com/c/Parithabangal" target="_self" class="subscriber-link">
+                            <div class="logo-hover">
+                                <img class="profile-pic"src="logos/paridhabangal-logo.jpg"> 
+                                <div class="hover-tip">Parithabangal</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="context">
+                        <p class="video-title">
+                            <a href="https://www.youtube.com/watch?v=_kciYqmz52g" target="_self" class="video-title-link">
+                                Rugged Boy Paavangal | Parithabangal
+                            </a>
+                        </p>
+
+                        <p class="channel">
+                            <a href="https://www.youtube.com/c/Parithabangal" target="_self" class="subscriber-link">
+                                Parithabangal <span class="tick">&#10003;</span>
+                            </a>
+                        </p>
+
+                        <p class="stats">
+                            2.9M views <span class="dot">&#183;</span> 2 weeks ago
+                        </p>
+                    </div>
+
+                    <div class="video-option">
+                        <button class="options">
+                            <img class="opt" src="icons/options.svg">
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="videos">
+                <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=PbRAJGTr5Dc" target="_self" class="video-title-link">
+                        <img class="thumbnail"src="thumbnails\mayakama-kalakama.jpg">
+                        <div class="video-time">                                    
+                            2:22
+                        </div>
+                    </a>
+                </div>
+
+                <div class="video-info-grid">
+                    <div class="logo">
+                        <a href="https://www.youtube.com/c/suntv" target="_self" class="subscriber-link">
+                            <div class="logo-hover">
+                                <img class="profile-pic"src="logos/sun-tv.jpg"> 
+                                <div class="hover-tip">Sun TV</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="context">
+                        <p class="video-title">
+                            <a href="https://www.youtube.com/watch?v=PbRAJGTr5Dc" target="_self" class="video-title-link">
+                                Mayakkama Kalakkama - Official Lyric Video | Thiruchitrambalam | Dhanush | Anirudh | Sun Pictures                           
+                            </a>
+                        </p>
+
+                        <p class="channel">
+                            <a href="https://www.youtube.com/c/suntv" target="_self" class="subscriber-link">
+                                Sun TV <span class="tick">&#10003;</span>
+                            </a>
+                        </p>
+
+                        <p class="stats">
+                            7.8M views <span class="dot">&#183;</span> 2 weeks ago
+                        </p>
+                    </div>
+
+                    <div class="video-option">
+                        <button class="options">
+                            <img class="opt" src="icons/options.svg">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+    </body>
+</html>
